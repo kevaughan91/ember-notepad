@@ -1,0 +1,11 @@
+<div>
+  <h2><input/></h2>
+  <div class="note-content--container">
+    <div class="note--list-item">
+        <textarea onkeyup={{action 'update' value="target.value"}}> 
+      </textarea>
+    </div>
+  </div>
+</div>
+<button class="stickynote" {{action 'save' updatedText}}>save</button>
+<button class="stickynote">{{link-to "--cancel" "notes.index"}}</button>

@@ -1,0 +1,10 @@
+<div>
+  <h2>{{model.title}}</h2>
+  <div class="note-content--container">
+    <div class="note--list-item">
+       <pre>{{model.content}}</pre>
+    </div>
+  </div>
+</div>
+<button class="stickynote">{{link-to "--back to notes" "notes.index"}}</button>
+<button class="stickynote">{{link-to "--edit" "notes.edit" model}}</button>

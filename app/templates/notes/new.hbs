@@ -1,0 +1,9 @@
+<div class="new-note">
+    <h2>New Note:</h2>
+    <div class="new-note--inner">
+        {{input class="new-title" type="text" value=title placeholder="Enter a title"}}
+        {{textarea type="text" class="new-text" value=text placeholder="Note Text"}}
+    </div>
+    <button class="stickynote save-new-button" {{action 'save'}}>save</button>
+    <button class="stickynote save-new-button"{{action 'cancel'}}>cancel</button>
+</div>

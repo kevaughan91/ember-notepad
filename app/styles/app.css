@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+ 
+
+#app {
+  border-top: 47px solid #544340;
+  background-color: #da7960;
+  width: 575px;
+  padding-top: 17px;
+  margin: 0 auto;
+  margin-top: 25px;
+
+}
+
+ .trash {
+   height:17px;
+   cursor:pointer;
+ }
+
+.notepad--top {
+
+  background-color: #544340;
+
+  height:20px;
+
+}
+
+ .new-note {
+   padding-top:17px;
+   padding-left:15px;
+ }
+
+ .new-note h2 {
+  padding-left:0 !important;
+}
+
+.new-title{
+    background-color: transparent;
+    border: 1px solid #8e8e88;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.save-new-button {
+  cursor:pointer;
+  color: #2c83c6;
+}
+
+
+.new-text {
+    background-color: transparent;
+    width: 75%;
+    height: 200px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px;
+    border: 1px solid #8e8e88;
+    margin:28px 0 10px;
+}
+
+.notepad-container {
+
+  border-left: 2px solid #eca393;
+
+  margin-left:75px;
+
+  height: 600px;
+
+}
+
+ 
+
+.notepad-container--inner {
+
+  border-left: 2px solid #eca393;
+
+  margin-left:3px;
+
+  height: 600px;
+
+}
+
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+ 
+
+.note--list-item {
+  font-family: 'Indie Flower';
+  font-size: 18px;
+
+}
+
+.note--list-item pre {
+  font-family: 'Indie Flower';
+  font-size: 18px;
+}
+
+ 
+
+.note--list-item button{
+  font-size: 16px;
+  margin-top: 4px;
+  font-family: 'Indie Flower';
+}
+
+ 
+
+.note-content--container {
+  margin: 33px 12px 0;
+}
+
+ 
+
+.notepad-container--inner h2 {
+  color:#555;
+  padding-left:15px;
+  margin:0;
+  font-weight:300;
+  font-family: 'Indie Flower';
+}
+
+
+
+ul {
+  margin: 34px 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+ 
+
+button {
+  background-color:transparent;
+  border: none;
+}
+
+ 
+
+.note--background{
+  height: 600px;
+  background-size: 48px 30px;
+  background-image: repeating-linear-gradient(180deg, #feffe0, #a1d6ca 1px, #feffe0 0px, #feffe0 29px);
+}
+
+ 
+
+textarea {
+  background-color:transparent;
+  width:80%;
+  height:70%;
+}
+
+.cursor {
+  position: relative;
+}
+
+.cursor i {
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background-color: gray;
+  left: 5px;
+  top: 1%;
+  animation-name: blink;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+ 
+
+.cursor input:focus + i {
+
+  display: none;
+
+}
+
+ 
+
+.stickynote {
+  float: left;
+  display: block;
+  position: relative;
+  padding: .75em;
+  width: 150px;
+  height: 45px;
+  margin: 12px 30px 12px 0;
+  background: linear-gradient(top, rgba(0,0,0,.05), rgba(0,0,0,.25));
+  background-color: #FFFD75;
+  box-shadow: 5px 5px 10px -2px rgba(33,33,33,.3);
+  transform: rotate(2deg);
+  transform: skew(-1deg,1deg);
+  transition: transform .15s;
+  z-index: 1;
+  font-size:12px;
+}
+
+ 
+
+@keyframes blink {
+
+  from { opacity: 1; }
+
+  to { opacity: 0; }
+
+}
+
+ 

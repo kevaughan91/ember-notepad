@@ -1,0 +1,12 @@
+{{#list-filter
+   filter=(action 'filterByCity')
+   as |filteredResults|}}
+  <ul>
+    {{#each filteredResults as |note|}}
+      <li class="note--list-item">
+        {{link-to note.title "notes.show" note}}
+      </li>
+    {{/each}}
+  </ul>
+{{/list-filter}}
+<button class="stickynote">{{link-to "add new" "notes.new"}}</button>
